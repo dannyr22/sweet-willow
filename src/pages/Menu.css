@@ -1,0 +1,141 @@
+.page-hero {
+  position: relative;
+  height: 380px;
+  background: linear-gradient(135deg, #3D3D3D 0%, #8B6070 50%, #C4899B 100%);
+  display: flex;
+  align-items: flex-end;
+  padding-top: 70px;
+}
+
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 80%, rgba(196,137,155,0.15) 0%, transparent 70%);
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 48px;
+}
+
+.page-hero-content h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.page-hero-content p {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+}
+
+.menu-content {
+  padding: 64px 0;
+  background-color: var(--light-background-color);
+}
+
+.menu-section {
+  margin-bottom: 56px;
+}
+
+.menu-section:last-child {
+  margin-bottom: 0;
+}
+
+.menu-section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--light-border-color);
+}
+
+.menu-emoji {
+  font-size: 1.6rem;
+}
+
+.menu-section-header h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--dark-text-color);
+}
+
+.menu-section-note {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--gray-text-color);
+  margin-bottom: 16px;
+  margin-top: -8px;
+}
+
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.menu-item-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--light-text-color);
+  border: 1px solid var(--light-border-color);
+  border-radius: 12px;
+  padding: 16px 20px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.menu-item-card:hover {
+  box-shadow: 0 8px 24px rgba(196,137,155,0.15);
+  transform: translateY(-2px);
+}
+
+.menu-item-info h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--dark-text-color);
+  margin-bottom: 4px;
+}
+
+.menu-item-info p {
+  font-size: 0.825rem;
+  color: var(--gray-text-color);
+}
+
+.menu-item-price {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.menu-order-cta {
+  background-color: var(--dark-background-color);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.order-cta-inner h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.order-cta-inner p {
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 24px;
+}
+
+@media (max-width: 700px) {
+  .menu-items-grid {
+    grid-template-columns: 1fr;
+  }
+}
