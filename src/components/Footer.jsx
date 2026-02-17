@@ -18,6 +18,9 @@ export default function Footer() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/menu">Menu</Link></li>
             <li><Link to="/about-us">About Us</Link></li>
+            <li><Link to="/events">Events</Link></li>
+            <li><Link to="/gallery">Gallery</Link></li>
+            <li><Link to="/location">Location</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>

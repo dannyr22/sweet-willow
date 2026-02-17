@@ -169,6 +169,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Instagram */}
+      <section className="instagram-section">
+        <div className="container">
+          <div className="section-header-center">
+            <h2 className="section-heading">Follow Us on Instagram</h2>
+            <p className="section-subheading">See what we're up to — fresh food, coffee, and café vibes!</p>
+          </div>
+          <div className="elfsight-app-d49f3cb8-802a-4d08-8ca8-3a55ba0ba7f6" data-elfsight-app-lazy></div>
+        </div>
+      </section>
+
       {/* Visit CTA */}
       <section className="visit-cta-section">
         <div className="container visit-cta-inner">

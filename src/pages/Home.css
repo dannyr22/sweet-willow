@@ -277,6 +277,12 @@
   color: var(--dark-text-color);
 }
 
+/* Instagram */
+.instagram-section {
+  padding: 80px 0;
+  background-color: var(--medium-background-color);
+}
+
 /* Visit CTA */
 .visit-cta-section {
   padding: 80px 0;

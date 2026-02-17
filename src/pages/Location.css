@@ -1,0 +1,107 @@
+.location-section {
+  padding: 64px 0;
+  background-color: var(--light-background-color);
+}
+
+.location-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.loc-card {
+  background: var(--light-text-color);
+  border: 1px solid var(--light-border-color);
+  border-radius: 12px;
+  padding: 24px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.loc-card:hover {
+  box-shadow: 0 8px 24px rgba(196,137,155,0.15);
+  transform: translateY(-2px);
+}
+
+.loc-card-icon {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.loc-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark-text-color);
+  margin-bottom: 8px;
+}
+
+.loc-card p {
+  font-size: 0.9rem;
+  color: var(--gray-text-color);
+  margin-bottom: 4px;
+}
+
+.loc-btn {
+  margin-top: 16px;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.hours-table tr {
+  border-bottom: 1px solid var(--light-border-color);
+}
+
+.hours-table tr:last-child {
+  border-bottom: none;
+}
+
+.hours-day,
+.hours-time {
+  padding: 7px 4px;
+  font-size: 0.875rem;
+  color: var(--gray-text-color);
+}
+
+.hours-day {
+  font-weight: 600;
+  color: var(--dark-text-color);
+}
+
+.today-row {
+  background: var(--medium-background-color);
+  border-radius: 6px;
+}
+
+.today-row .hours-day,
+.today-row .hours-time {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.location-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.map-embed {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 900px) {
+  .location-inner {
+    grid-template-columns: 1fr;
+  }
+}

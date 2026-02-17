@@ -6,7 +6,10 @@ import BottomBanner from './components/BottomBanner';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
 import AboutUs from './pages/AboutUs';
+import Events from './pages/Events';
+import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import Location from './pages/Location';
 import Approve from './pages/Approve';
 import './App.css';
 
@@ -29,7 +32,10 @@ function AppLayout() {
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/location" element={<Location />} />
           <Route path="/approve" element={<Approve />} />
         </Routes>
       </main>
